@@ -34,12 +34,6 @@ export default function Home() {
     await fetchTodos();
   };
 
-  const completeTodo = async (id) => {
-    const response = await axios.put("/api", {}, { params: { mongoId: id } });
-    toast.success(response.data.msg);
-    await fetchTodos();
-  };
-
   const toggleTodo = async (id) => {
     try {
       const response = await axios.put("/api", {}, { params: { mongoId: id } });
