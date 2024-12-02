@@ -1,5 +1,5 @@
 "use client";
-import Todo from "../components/Todo";
+import Todo from "@/Components/Todo";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
